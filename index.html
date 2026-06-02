@@ -1,133 +1,264 @@
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<title>Style Season by NAME HERE</title>
-		<meta charset="utf-8">
-		<meta name="robots" content="noindex,nofollow">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="css/default.css">
-		<link href='https://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'>
-		<style>
-			.masthead{
-				font-family: 'Damion', cursive; /* required for google font */
-				font-size:3em;
-			}
-			
-			#logo{
-				float:right;
-				display:inline-block;
-				padding:2px;
-				max-width:100px; /* actual size of image */
-				width:20%; /* approximate size taken on screen in maximum view */
-			}
-			
-			#wear {
-				float:left;
-				display:inline-block;
-				padding:20px;
-				max-width:300px; /* actual size of image */
-				width:33%; /* approximate size taken on screen in maximum view */
-			}
-			
-			ul.colors{
-				display:inline-block;
-				margin-left:5%;
-				list-style-type: none;
-			}
-		</style>
-	</head>
-	<body>
-	<header>
-		<img src="images/four-seasons.gif" alt="Seasonal Logo Goes Here" class="flexible" id="logo">
-		<h1 class="masthead">Eddie Browser</h1>
-		<nav>
-			<ul>
-				<li class="seasons"><a href="Spring" onclick="changeSeason(this); return false;">Spring</a></li>
-				<li class="seasons"><a href="Summer" onclick="changeSeason(this); return false;">Summer</a></li>
-				<li class="seasons"><a href="Fall" onclick="changeSeason(this); return false;">Fall</a></li>
-				<li class="seasons"><a href="Winter" onclick="changeSeason(this); return false;">Winter</a></li>
-			</ul>
-		</nav>
-	</header>
-	 
-	<main class="wrapper">
-	<header><h2>Outfitter for All Seasons!</h2></header>
-	<div>
-		<p>The colors of the seasonal images are as follows:</p>
-		<ul class="colors">
-			<li>Spring: <b>#2B7129</b></li>
-			<li>Summer: <b>#EBA52B</b></li>
-			<li>Fall: <b>#A81124</b></li>
-			<li>Winter: <b>#005393</b></li>
-		</ul>
-	</div>
-	<p><strong>Replace some text here</strong> and add your explanation of how this page works and what it does</p>	
-	<p>
-	Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica 
-		single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. 
-		Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. 
-		Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. 
-		Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. 
-		Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
-	<img src="images/300x400.png" alt="Season Wear Goes Here" id="wear">
-	</p>
-	<p>
-	Gluten-free selfies normcore chillwave. Listicle 90's chambray, seitan cold-pressed try-hard Etsy authentic 
-		flexitarian vinyl. Meditation bespoke freegan, single-origin coffee cred seitan 90's gentrify brunch 
-		Williamsburg squid cold-pressed. Brooklyn readymade Tumblr wayfarers ethical. Biodiesel VHS Godard High Life, 
-		tousled Banksy craft beer. Mlkshk direct trade locavore, mumblecore keytar artisan hashtag fap. 
-		Cred cronut Brooklyn, locavore art party small batch PBR semiotics ennui kitsch taxidermy mlkshk stumptown.
-	</p>
-	<p>
-	Polaroid iPhone plaid, Pitchfork Shoreditch paleo. Hashtag keytar chia scenester Pinterest, semiotics 
-		tousled food truck. YOLO scenester deep v, taxidermy paleo quinoa McSweeney's Carles VHS mustache 
-		Williamsburg gluten-free readymade cold-pressed. Truffaut Thundercats Schlitz, listicle organic Brooklyn 
-		paleo squid asymmetrical readymade migas gluten-free Austin. Etsy Wes Anderson 8-bit retro, polaroid synth 
-		paleo banh mi before they sold out Vice. Bushwick fap Intelligentsia, whatever Etsy High Life Kickstarter 
-		migas retro Banksy YOLO Carles yr raw denim. Gluten-free fixie taxidermy pop-up, actually Kickstarter flannel 
-		put a bird on it master cleanse.
-	</p>
-	<p>
-	Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
-	</p>
-	<footer>
-	<p><small>&copy; 2026 by 
-		NAME HERE, All Rights Reserved ~ 
-		<a id="html-checker" href="#">Check HTML</a> ~ 
-		<a id="css-checker" href="#">Check CSS</a></small>
-	</p>
-	</footer>
-	</main>
-	<script>
-		function changeSeason(el) {
-		    // 1. 'element' is the <a> tag that was just clicked
-		    // 2. Scoop the href attribute (e.g., "winter")
-		    var season = el.getAttribute("href");
-				season = season.toLowercase();
+<head>
+    <title>Style Season by BECKHAM KUNDA</title>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width">
 
-		    // 3. Test the scoop!
-		    //alert("The season is: " + season);
+```
+<link rel="stylesheet" href="css/default.css">
+<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" type="text/css">
 
-			//select the background of the page
-				const html = document.querySelector("html");
-				const banner = document.querySelector("header > h2");
-				const logo = document.getElementbyId("logo")
-				const logo = document.getElementbyId("wear")
+<style>
+    html {
+        background-color: #cccccc;
+    }
 
-			switch(season){
-				case"spring":
-						html.style.backgroundColor ="#2B7129"; 
-						banner.textContent = "Spring Forward!";
-				break;
-			}
+    .masthead {
+        font-family: 'Damion', cursive;
+        font-size: 3em;
+    }
 
-			logo.src ="images/" + season + ".gif";
-			logo.src ="images/" + wear + "wear.gif";
-		    
-		    // 4. Now you can use that 'season' variable to change pics/colors
-		    console.log("The season is: " + season);
-		}
-	</script>
-	<script src="js/main.js"></script>
-	</body>
+    #logo {
+        float: right;
+        display: inline-block;
+        padding: 2px;
+        max-width: 100px;
+        width: 20%;
+    }
+
+    #wear {
+        float: left;
+        display: inline-block;
+        padding: 20px;
+        max-width: 300px;
+        width: 33%;
+    }
+
+    ul.colors {
+        display: inline-block;
+        margin-left: 5%;
+        list-style-type: none;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+    .active-season {
+        font-weight: bold;
+        background-color: #eeeeee;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .explanation {
+        background-color: #eeeeee;
+        padding: 15px;
+        border-left: 6px solid #333333;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        clear: both;
+        text-align: center;
+        padding-top: 20px;
+    }
+</style>
+```
+
+</head>
+
+<body>
+    <header>
+        <img src="images/four-seasons.gif" alt="Four seasons logo" class="flexible" id="logo">
+
+```
+    <h1 class="masthead">Eddie Browser</h1>
+
+    <nav>
+        <ul>
+            <li class="seasons"><a href="#" data-season="default" class="active-season">Default</a></li>
+            <li class="seasons"><a href="#" data-season="spring">Spring</a></li>
+            <li class="seasons"><a href="#" data-season="summer">Summer</a></li>
+            <li class="seasons"><a href="#" data-season="fall">Fall</a></li>
+            <li class="seasons"><a href="#" data-season="winter">Winter</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="wrapper">
+    <header>
+        <h2 id="season-heading">Outfitter for All Seasons!</h2>
+    </header>
+
+    <section class="explanation">
+        <h3>How This Page Works</h3>
+        <p>
+            This page uses JavaScript to change the look and content of the page when a season is clicked.
+            Each season changes the background color, logo image, clothing image, and seasonal message.
+            The Default button resets the page back to its original Eddie Browser look.
+        </p>
+    </section>
+
+    <div>
+        <p>The colors of the seasonal images are as follows:</p>
+        <ul class="colors">
+            <li>Spring: <strong>#2B7129</strong></li>
+            <li>Summer: <strong>#EBA52B</strong></li>
+            <li>Fall: <strong>#A81124</strong></li>
+            <li>Winter: <strong>#005393</strong></li>
+        </ul>
+    </div>
+
+    <p id="season-message">
+        Welcome to Eddie Browser. Choose a season to see our seasonal clothing collection.
+    </p>
+
+    <p id="clothing-item">
+        Featured item: Everyday outfit
+    </p>
+
+    <p>
+        Eddie Browser is an outfitter for every season. Whether it is warm, cold, rainy, or windy,
+        our store has clothing that matches the weather and the feeling of the season.
+    </p>
+
+    <p>
+        <img src="images/300x400.png" alt="Default seasonal wear" id="wear">
+    </p>
+
+    <p>
+        Click Spring, Summer, Fall, or Winter above to see the page update. The image, colors,
+        and text will change without opening a new page.
+    </p>
+
+    <p>
+        Text provided by <a href="http://hipsum.co/" target="_blank">Hipster Ipsum</a>
+    </p>
+
+    <footer>
+        <p>
+            <small>
+                &copy; 2026 by BECKHAM KUNDA, All Rights Reserved ~
+                <a id="html-checker" href="#">Check HTML</a> ~
+                <a id="css-checker" href="#">Check CSS</a>
+            </small>
+        </p>
+    </footer>
+</main>
+
+<script>
+    const seasonInfo = {
+        default: {
+            background: "#cccccc",
+            logo: "images/four-seasons.gif",
+            logoAlt: "Four seasons logo",
+            wear: "images/300x400.png",
+            wearAlt: "Default seasonal wear",
+            heading: "Outfitter for All Seasons!",
+            message: "Welcome to Eddie Browser. Choose a season to see our seasonal clothing collection.",
+            item: "Featured item: Everyday outfit"
+        },
+
+        spring: {
+            background: "#2B7129",
+            logo: "images/spring.gif",
+            logoAlt: "Spring logo",
+            wear: "images/spring-wear.jpg",
+            wearAlt: "Spring clothing item",
+            heading: "Spring Forward!",
+            message: "Step into Spring with fresh colors and light layers.",
+            item: "Featured item: Light spring jacket"
+        },
+
+        summer: {
+            background: "#EBA52B",
+            logo: "images/summer.gif",
+            logoAlt: "Summer logo",
+            wear: "images/summer-wear.jpg",
+            wearAlt: "Summer clothing item",
+            heading: "Shine Bright This Summer!",
+            message: "Stay cool this Summer with bright and comfortable outfits.",
+            item: "Featured item: Summer shirt"
+        },
+
+        fall: {
+            background: "#A81124",
+            logo: "images/fall.gif",
+            logoAlt: "Fall logo",
+            wear: "images/fall-wear.jpg",
+            wearAlt: "Fall clothing item",
+            heading: "Leap into our Fall Wear!",
+            message: "Warm up your style with Fall colors and comfortable layers.",
+            item: "Featured item: Fall jacket"
+        },
+
+        winter: {
+            background: "#005393",
+            logo: "images/winter.gif",
+            logoAlt: "Winter logo",
+            wear: "images/winter-wear.jpg",
+            wearAlt: "Winter clothing item",
+            heading: "Bundle Up for Winter!",
+            message: "Get ready for cold weather with warm and stylish Winter gear.",
+            item: "Featured item: Winter coat"
+        }
+    };
+
+    function changeSeason(seasonName) {
+        const season = seasonInfo[seasonName];
+
+        document.querySelector("html").style.backgroundColor = season.background;
+
+        document.getElementById("logo").src = season.logo;
+        document.getElementById("logo").alt = season.logoAlt;
+
+        document.getElementById("wear").src = season.wear;
+        document.getElementById("wear").alt = season.wearAlt;
+
+        document.getElementById("season-heading").textContent = season.heading;
+        document.getElementById("season-message").textContent = season.message;
+        document.getElementById("clothing-item").textContent = season.item;
+
+        const links = document.querySelectorAll("nav a");
+
+        links.forEach(function(link) {
+            link.classList.remove("active-season");
+        });
+
+        document.querySelector('[data-season="' + seasonName + '"]').classList.add("active-season");
+    }
+
+    const seasonLinks = document.querySelectorAll("nav a");
+
+    seasonLinks.forEach(function(link) {
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            const seasonName = this.getAttribute("data-season");
+            changeSeason(seasonName);
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const currentUrl = window.location.href;
+
+        document.getElementById("html-checker").href =
+            "https://validator.w3.org/nu/?doc=" + encodeURIComponent(currentUrl);
+
+        document.getElementById("css-checker").href =
+            "https://jigsaw.w3.org/css-validator/validator?uri=" + encodeURIComponent(currentUrl);
+    });
+</script>
+```
+
+</body>
 </html>
